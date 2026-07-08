@@ -21,7 +21,7 @@ def escanear_portas(alvo, portas):
         s.close()
         return portas_abertas
     def analisar_com_ia(lista_portas):
-        client = Groq(api_key=os.getenv("GROQ_API-KEY"))
+       client = Groq(api_key=os.getenv("GROQ_API_KEY"))
         prompt = f"""
 Portas encontradas abertas: {lista_portas}
 Se a lista estiver vazia, explique que o ambiente local etá seguro e protegido. Se houver portas abertas (como 21, 22, 80, 443, 3306, 8080), explique detalhadamente qual serviço costuma rodar nelas, qual o risco dv segurança associado a deixá - las expostas e qual a recomendaçaõ técnica.
