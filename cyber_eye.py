@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 def escanear_portas(alvo, portas):
     print(f"\n[+] Iniciando varredura de no alvo: {alvo}")
-    print(f"[+] Horário de início: {datetime.now().strftime('%Y-%m-%d%H:%M:%S')
+    print(f"[+] Horário de início: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print("-" * 50)
     portas_abertas = []
     for porta in portas:
