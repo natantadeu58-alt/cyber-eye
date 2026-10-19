@@ -2,7 +2,7 @@
 
 Scanner de portas em Python com análise de risco de segurança gerada por IA. A ferramenta varre um alvo em busca de portas abertas e envia o resultado para um modelo LLM (via Groq) que produz um parecer técnico sobre os riscos de cada serviço exposto, salvo automaticamente em um relatório Markdown.
 
-> Nota: esta descrição reflete o script enviado (varredura de portas + análise de IA). Se o cyber-eye também incluir módulos de monitoramento de tráfego em tempo real ou análise de logs de sistema, me envie esses arquivos que eu incorporo ao README.
+
 
 ---
 
