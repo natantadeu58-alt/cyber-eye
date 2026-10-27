@@ -21,9 +21,9 @@ def escanear_portas(alvo, portas):
             portas_abertas.append(porta)
         s.close()
         
-    return portas_abertas  # Movido para fora do loop 'for'
+    return portas_abertas  
 
-def analisar_com_ia(lista_portas):  # Movido para fora da função escanear_portas
+def analisar_com_ia(lista_portas):  
     client = Groq(api_key=os.getenv(""))
     prompt = f"""
 Portas encontradas abertas: {lista_portas}
@@ -37,7 +37,7 @@ Formate a resposta em Markdown profissional, com títulos claros.
     )
     return completion.choices[0].message.content
 
-if __name__ == "__main__":  # Removido o espaço extra de "__main__"
+if __name__ == "__main__":  
     ALVO_LOCAL = "127.0.0.1"
     PORTAS_TESTE = [21, 22, 23, 25, 53, 80, 110, 443, 1433, 3306, 8080]
     
